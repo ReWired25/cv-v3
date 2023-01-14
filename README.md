@@ -1,2 +1,1 @@
-# cv-v3
-Actual CV
+Actual CV with completed projects and contacts
