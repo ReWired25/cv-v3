@@ -1,0 +1,20 @@
+@use 'styles/common.scss' as *;
+
+.soft-skills {
+  padding: 25px;
+  width: 705px;
+  color: $optional-color-green;
+}
+
+.soft-skills-title {
+  text-align: center;
+}
+
+.soft-skills-list {
+  padding: 15px 70px;
+}
+
+.soft-skills-list-item {
+  padding: 10px;
+  list-style: '❯';
+}

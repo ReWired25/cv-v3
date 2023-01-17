@@ -1,0 +1,8 @@
+@use 'styles/common.scss' as *;
+
+.hard-skills-education-container,
+.soft-skills-about-container {
+  background-color: $section-background;
+  display: flex;
+  justify-content: space-around;
+}

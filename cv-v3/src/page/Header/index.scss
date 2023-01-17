@@ -1,0 +1,17 @@
+@use 'styles/common.scss' as *;
+
+.header {
+  padding: 25px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 25px;
+  background-color: $section-background;
+  color: $optional-color-green;
+}
+
+.avatar {
+  height: 150px;
+  width: 150px;
+  background-color: aqua;
+}

@@ -1,11 +1,24 @@
+import Contacts from 'components/Contacts';
+import HardSkills from 'components/Skills/HardSkills';
+import Education from 'components/Education';
+import SoftSkills from 'components/Skills/SoftSkills';
+import About from 'components/About';
+
 import './index.scss';
 
 const Main = () => {
   return (
     <main>
-      <section>Education info</section>
+      <Contacts />
+      <section className="hard-skills-education-container">
+        <HardSkills />
+        <Education />
+      </section>
+      <section className="soft-skills-about-container">
+        <SoftSkills />
+        <About />
+      </section>
       <section>Some projects</section>
-      <section>About</section>
     </main>
   );
 };

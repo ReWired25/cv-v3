@@ -4,16 +4,12 @@ const Header = () => {
   return (
     <header className="header">
       <div>
-        <div className="avatar"></div>
-        <div className="title-name">N K</div>
+        <div className="title-name">
+          <h1>Nikita Kalendarev</h1>
+          <h3>Frontend developer</h3>
+        </div>
       </div>
-      <nav className="navigation">
-        <li>item</li>
-        <li>item</li>
-        <li>item</li>
-        <li>item</li>
-        <li>item</li>
-      </nav>
+      <div className="avatar"></div>
     </header>
   );
 };

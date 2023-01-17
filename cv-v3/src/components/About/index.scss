@@ -1,0 +1,16 @@
+@use 'styles/common.scss' as *;
+
+.about {
+  padding: 25px;
+  width: 705px;
+  color: $optional-color-green;
+}
+
+.about-title {
+  text-align: center;
+}
+
+.about-info,
+.about-interests {
+  padding: 15px 50px;
+}

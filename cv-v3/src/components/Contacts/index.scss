@@ -1,0 +1,45 @@
+@use 'styles/common.scss' as *;
+
+.contacts {
+  padding: 20px;
+  justify-content: center;
+  display: flex;
+  gap: 70px;
+  background-color: $section-background;
+}
+
+.mobile,
+.email,
+.tg,
+.github {
+  padding-left: 30px;
+}
+
+.mobile::before {
+  background-image: url('../../../public/assets/svg/icon-phone.svg');
+}
+
+.email::before {
+  background-image: url('../../../public/assets/svg/icon-email.svg');
+}
+
+.tg::before {
+  background-image: url('../../../public/assets/svg/icon-tg.svg');
+}
+
+.github::before {
+  background-image: url('../../../public/assets/svg/icon-github.svg');
+}
+
+.mobile::before,
+.email::before,
+.tg::before,
+.github::before {
+  position: absolute;
+  background-repeat: no-repeat;
+  content: '';
+  width: 22px;
+  height: 22px;
+  background-size: contain;
+  left: 0;
+}
