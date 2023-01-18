@@ -1,0 +1,53 @@
+@use 'styles/common.scss' as *;
+
+.projects-section {
+  padding: 25px;
+  background-color: $section-background;
+  color: $optional-color-green;
+}
+
+.projects-section-title {
+  text-align: center;
+}
+
+.projects-container {
+  padding: 15px 0;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+  justify-content: center;
+}
+
+.project {
+  width: 350px;
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.project-info {
+  padding: 15px;
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  font-size: 15px;
+  text-align: center;
+  list-style: '❯';
+}
+
+.project-description,
+.project-features {
+  color: rgba($optional-color-green, 0.7);
+}
+
+.project-description,
+.project-features,
+.project-stack {
+  padding-left: 10px;
+}
+
+.preview-img {
+  width: 100px;
+}

@@ -3,6 +3,7 @@ import HardSkills from 'components/Skills/HardSkills';
 import Education from 'components/Education';
 import SoftSkills from 'components/Skills/SoftSkills';
 import About from 'components/About';
+import Projects from 'components/Projects';
 
 import './index.scss';
 
@@ -18,6 +19,7 @@ const Main = () => {
         <SoftSkills />
         <About />
       </section>
+      <Projects />
       <section>Some projects</section>
     </main>
   );
