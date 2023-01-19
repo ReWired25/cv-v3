@@ -11,7 +11,7 @@
 }
 
 .education-source {
-  padding: 15px;
+  padding: 20px 15px;
   text-align: center;
 }
 
@@ -26,6 +26,26 @@
 
 .education-source-title {
   padding: 5px 0;
+}
+
+.rss-link {
+  display: block;
+}
+
+.certificate-link {
+  color: $optional-color-lightaqua;
+  text-shadow: 0 0 10px $optional-color-lightaqua;
+}
+
+.certificate-link::after {
+  background-color: $optional-color-lightaqua;
+  box-shadow: 0 0 10px $optional-color-lightaqua;
+}
+
+.certificate-link:hover::after,
+.certificate-link:focus::after {
+  background-color: $optional-color-lightaqua;
+  box-shadow: 0 0 10px $optional-color-lightaqua;
 }
 
 .education-list-item {

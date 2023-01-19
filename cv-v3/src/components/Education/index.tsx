@@ -7,11 +7,11 @@ import './index.scss';
 const Education = () => {
   return (
     <section className="education">
-      <h3 className="education-title">Education</h3>
+      <h3 className="section-title education-title">Education</h3>
       <div className="education-sources-container">
         <ul className="education-source">
           <h4 className="education-source-title">
-            <Link link="https://rs.school" name="The Rolling Scopes School" />
+            <Link className="rss-link" link="https://rs.school" name="The Rolling Scopes School" />
           </h4>
           {RSS_EDUCATION.map(({ title, period, link }) => (
             <li className="education-list-item" key={title}>
@@ -19,7 +19,7 @@ const Education = () => {
               <p className="period">{period}</p>
               {link && (
                 <p>
-                  <Link link={link} name="Certificate" />
+                  <Link className="certificate-link" link={link} name="Certificate" />
                 </p>
               )}
             </li>

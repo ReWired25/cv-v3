@@ -5,7 +5,7 @@ import './index.scss';
 const HardSkills = () => {
   return (
     <section className="hard-skills">
-      <h3 className="hard-skills-title">Hard Skills</h3>
+      <h3 className="section-title hard-skills-title">Hard Skills</h3>
       <ul className="skills-section stack">
         <h4 className="stack-title">Current Stack</h4>
         {STACK_BAGES.map(({ type, badges }) => (

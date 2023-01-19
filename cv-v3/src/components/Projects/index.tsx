@@ -7,7 +7,7 @@ import './index.scss';
 const Projects = () => {
   return (
     <section className="projects-section">
-      <h3 className="projects-section-title">Projects</h3>
+      <h3 className="section-title projects-section-title">Projects</h3>
       <div className="projects-container">
         {PROJECTS_INFO.map(({ name, description, stack, features, img, repo, deploy }) => (
           <div key={name} className="project">
@@ -16,7 +16,9 @@ const Projects = () => {
             </h4>
             <ul className="project-info">
               <li className="project-description">{description}</li>
-              <li className="project-stack">{stack}</li>
+              <li className="project-stack">
+                <span className="project-stack-info">{stack}</span>
+              </li>
               <li className="project-features">{features}</li>
             </ul>
             <a target="_blank" className="deploy-link" href={deploy} rel="noreferrer">

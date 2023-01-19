@@ -4,6 +4,7 @@ import Education from 'components/Education';
 import SoftSkills from 'components/Skills/SoftSkills';
 import About from 'components/About';
 import Projects from 'components/Projects';
+import StyleLine from 'components/StyleLine';
 
 import './index.scss';
 
@@ -11,16 +12,19 @@ const Main = () => {
   return (
     <main>
       <Contacts />
+      <StyleLine />
       <section className="hard-skills-education-container">
         <HardSkills />
         <Education />
       </section>
+      <StyleLine />
       <section className="soft-skills-about-container">
         <SoftSkills />
         <About />
       </section>
+      <StyleLine />
       <Projects />
-      <section>Some projects</section>
+      <StyleLine />
     </main>
   );
 };

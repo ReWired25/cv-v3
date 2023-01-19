@@ -1,13 +1,29 @@
 @use 'styles/common.scss' as *;
 
 .header {
-  padding: 25px;
+  padding-top: 25px;
   display: flex;
   justify-content: center;
   align-items: center;
   gap: 25px;
   background-color: $section-background;
   color: $optional-color-green;
+}
+
+.title-name {
+  font-size: 50px;
+  font-weight: 500;
+  background: linear-gradient(219deg, $optional-color-aqua 19%, transparent 19%,transparent 20%, $optional-color-green 20%, $optional-color-green 39%, transparent 39%,transparent 40%, $optional-color-violet 40%, $optional-color-violet 59% , transparent 59%,transparent 60%, $optional-color-green 60%, $optional-color-green 79%, transparent 79%, transparent 80%, $optional-color-aqua 80%);
+  color: transparent;
+  background-clip: text;
+  -webkit-background-clip: text;
+  text-shadow: 0px 0px 50px rgb(76 252 76 / 35%);
+}
+
+.title-frontend {
+  font-size: 25px;
+  font-weight: 400;
+  text-align: center;
 }
 
 .avatar {

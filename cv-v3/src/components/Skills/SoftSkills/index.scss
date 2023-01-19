@@ -11,10 +11,15 @@
 }
 
 .soft-skills-list {
-  padding: 15px 70px;
+  padding: 20px 70px;
 }
 
 .soft-skills-list-item {
-  padding: 10px;
+  padding: 5px;
+  color: $optional-color-lightaqua;
   list-style: '❯';
+}
+
+.soft-skills-item-description {
+  color: $optional-color-green;
 }
