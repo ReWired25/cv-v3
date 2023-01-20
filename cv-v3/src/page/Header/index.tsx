@@ -9,7 +9,13 @@ const Header = () => {
           <h3 className="title-frontend">Frontend developer</h3>
         </div>
       </div>
-      <div className="avatar"></div>
+      <div className="avatar-container">
+        <img
+          className="avatar-photo"
+          src="./assets/cv-img/20230119_195025-new-contrast.jpg"
+          alt="avatar-photo"
+        />
+      </div>
     </header>
   );
 };

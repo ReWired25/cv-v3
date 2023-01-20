@@ -1,11 +1,11 @@
 @use 'styles/common.scss' as *;
 
 .header {
-  padding-top: 25px;
+  padding: 35px 0 15px 0;
   display: flex;
   justify-content: center;
   align-items: center;
-  gap: 25px;
+  gap: 35px;
   background-color: $section-background;
   color: $optional-color-green;
 }
@@ -26,8 +26,35 @@
   text-align: center;
 }
 
-.avatar {
-  height: 150px;
-  width: 150px;
-  background-color: aqua;
+.avatar-photo {
+  z-index: 5;
+  height: 170px;
+}
+
+.avatar-container {
+  position: relative;
+  display: flex;
+}
+
+.avatar-container::before,
+.avatar-container::after {
+  content: '';
+  position: absolute;
+}
+
+.avatar-container::before {
+  transform: translate(-5px, -5px);
+  z-index: 3;
+  background: $optional-color-green;
+  width: 80px;
+  height: 90px;
+  box-shadow: 0 0 5px $optional-color-green;
+}
+
+.avatar-container::after {
+  transform: translate(55px, 85px);
+  background: $optional-color-aqua;
+  width: 80px;
+  height: 90px;
+  box-shadow: 0 0 5px $optional-color-aqua;
 }

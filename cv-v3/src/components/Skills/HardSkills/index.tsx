@@ -19,7 +19,7 @@ const HardSkills = () => {
       <div className="skills-section">
         <h4 className="algorithms-title">Algorithms</h4>
         <p className="codewars">
-          <a href="https://www.codewars.com/users/ReWired25">
+          <a target="_blank" href="https://www.codewars.com/users/ReWired25" rel="noreferrer">
             <img
               className="codewars-badge"
               src="https://www.codewars.com/users/ReWired25/badges/large"

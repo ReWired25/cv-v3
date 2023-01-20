@@ -54,4 +54,11 @@
 
 .preview-img {
   width: 100px;
+  box-shadow: 0 10px 15px rgba($optional-color-aqua, 0.5);
+  transition: 0.5s;
+}
+
+.preview-img:hover {
+  box-shadow: 0 15px 20px rgba($optional-color-aqua, 0.7);
+  transition: 0.5s;
 }
