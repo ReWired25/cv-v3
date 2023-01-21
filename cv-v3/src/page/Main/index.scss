@@ -5,4 +5,8 @@
   background-color: $section-background;
   display: flex;
   justify-content: space-around;
+  @include media-tablet {
+    flex-direction: column;
+    align-items: center;
+  }
 }

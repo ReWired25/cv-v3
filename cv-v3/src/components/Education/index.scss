@@ -4,6 +4,9 @@
   padding: 25px;
   width: 705px;
   color: $optional-color-green;
+  @include media-small-tablet {
+    width: auto;
+  }
 }
 
 .education-title {
@@ -15,6 +18,12 @@
   text-align: center;
 }
 
+.education-rss {
+  @include media-tablet {
+    flex-grow: 1;
+  }
+}
+
 .education-source-title {
   font-size: 18px;
 }
@@ -22,6 +31,12 @@
 .education-sources-container {
   display: flex;
   gap: 25px;
+  @include media-small-tablet {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 0;
+  }
 }
 
 .education-source-title {

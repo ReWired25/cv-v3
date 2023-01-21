@@ -4,6 +4,12 @@
   padding: 25px;
   width: 705px;
   color: $optional-color-green;
+  @include media-small-tablet {
+    width: auto;
+  }
+  @include mobile {
+    padding: 15px 0;
+  }
 }
 
 .about-title {
@@ -14,4 +20,7 @@
 .about-interests {
   padding: 20px 50px;
   line-height: 1.5;
+  @include media-small-tablet {
+    padding: 20px 30px;
+  }
 }

@@ -5,3 +5,25 @@ $optional-color-aqua: #40c0cb;
 $optional-color-violet: #f732a6;
 $optional-color-pink: #fc49ff;
 $shadow-content: rgba(17, 236, 17, 0.8);
+
+$tablet: 1000px;
+$small-tablet: 720px;
+$mobile: 500px;
+
+@mixin media-tablet {
+  @media (max-width: $tablet) {
+    @content;
+  }
+}
+
+@mixin media-small-tablet {
+  @media (max-width: $small-tablet) {
+    @content;
+  }
+}
+
+@mixin mobile {
+  @media (max-width: $mobile) {
+    @content;
+  }
+}

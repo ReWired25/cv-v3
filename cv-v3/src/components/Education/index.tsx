@@ -9,7 +9,7 @@ const Education = () => {
     <section className="education">
       <h3 className="section-title education-title">Education</h3>
       <div className="education-sources-container">
-        <ul className="education-source">
+        <ul className="education-source education-rss">
           <h4 className="education-source-title">
             <Link className="rss-link" link="https://rs.school" name="The Rolling Scopes School" />
           </h4>

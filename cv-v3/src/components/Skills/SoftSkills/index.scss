@@ -4,6 +4,9 @@
   padding: 25px;
   width: 705px;
   color: $optional-color-green;
+  @include media-small-tablet {
+    width: auto;
+  }
 }
 
 .soft-skills-title {
@@ -12,6 +15,12 @@
 
 .soft-skills-list {
   padding: 20px 70px;
+  @include media-small-tablet {
+    padding: 20px 30px;
+  }
+  @include mobile {
+    padding: 10px 0;
+  }
 }
 
 .soft-skills-list-item {

@@ -6,6 +6,15 @@
   display: flex;
   gap: 70px;
   background-color: $section-background;
+  transition: 0.5s;
+  @include media-tablet {
+    flex-wrap: wrap;
+    gap: 30px;
+  }
+  @include mobile {
+    padding: 20px;
+    gap: 15px;
+  }
 }
 
 .mobile,

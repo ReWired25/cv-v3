@@ -4,6 +4,10 @@
   padding: 25px;
   width: 705px;
   color: $optional-color-green;
+  @include media-small-tablet {
+    width: auto;
+    padding: 25px 10px;
+  }
 }
 
 .hard-skills-title {
@@ -25,6 +29,9 @@
   justify-content: center;
   gap: 5px;
   padding-bottom: 5px;
+  @include mobile {
+    flex-wrap: wrap;
+  }
 }
 
 .codewars {
@@ -33,4 +40,7 @@
 
 .codewars-badge {
   width: 300px;
+  @include mobile{
+    width: 270px;
+  }
 }

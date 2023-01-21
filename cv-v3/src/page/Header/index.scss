@@ -8,6 +8,10 @@
   gap: 35px;
   background-color: $section-background;
   color: $optional-color-green;
+  @include mobile {
+    flex-direction: column;
+    gap: 20px;
+  }
 }
 
 .title-name {
@@ -18,17 +22,29 @@
   background-clip: text;
   -webkit-background-clip: text;
   text-shadow: 0px 0px 50px rgb(76 252 76 / 35%);
+  @include media-small-tablet {
+    font-size: 35px;
+  }
+  @include mobile {
+    font-size: 30px;
+  }
 }
 
 .title-frontend {
   font-size: 25px;
   font-weight: 400;
   text-align: center;
+  @include mobile {
+    font-size: 20px;
+  }
 }
 
 .avatar-photo {
   z-index: 5;
   height: 170px;
+  @include media-small-tablet {
+    height: 135px;
+  }
 }
 
 .avatar-container {
@@ -57,4 +73,7 @@
   width: 80px;
   height: 90px;
   box-shadow: 0 0 5px $optional-color-aqua;
+  @include media-small-tablet {
+    transform: translate(30px, 50px);
+  }
 }
