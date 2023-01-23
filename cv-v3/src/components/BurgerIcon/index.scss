@@ -1,0 +1,93 @@
+@use 'styles/common.scss' as *;
+
+.burger-menu {
+  display: none;
+  margin: 0 auto;
+  position: relative;
+  width: fit-content;
+  z-index: 15;
+  transition: 0.5s;
+  &:hover {
+    cursor: pointer;
+    &::before {
+      background: $optional-color-aqua;
+      box-shadow: 0 0 5px $optional-color-aqua;
+    }
+    &::after {
+      background: $optional-color-green;
+      box-shadow: 0 0 5px $optional-color-green;
+    }
+  }
+  @include media-small-tablet {
+    display: block;
+  }
+}
+
+.burger-menu.menu-active {
+  transform: rotate(0.25turn);
+}
+
+.burger-icon {
+  position: relative;
+  z-index: 10;
+  background-color: $section-background;
+  display: flex;
+  margin: 10px;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 8px;
+  height: 45px;
+  width: 45px;
+  transition: 0.5s;
+}
+
+.burger-icon.menu-active {
+  transform: rotate(0.25turn);
+}
+
+.burger-menu::before,
+.burger-menu::after {
+  content: '';
+  position: absolute;
+}
+
+.burger-menu::before{
+  transform: translate(8px, -2px);
+  background: $optional-color-green;
+  width: 25px;
+  height: 25px;
+  box-shadow: 0 0 5px $optional-color-green;
+  transition: 0.5s;
+}
+
+.burger-menu::after {
+  transform: translate(32px, -33px);
+  background: $optional-color-aqua;
+  width: 25px;
+  height: 25px;
+  box-shadow: 0 0 5px $optional-color-aqua;
+  transition: 0.5s;
+}
+
+.burger-icon-line {
+  width: 30px;
+  height: 2px;
+  background-color: $optional-color-green;
+  box-shadow: 0 0 5px $optional-color-green;
+  transition: 0.5s;
+}
+
+.burger-icon-line.menu-active {
+  width: 20px;
+}
+
+.middle-line {
+  width: 20px;
+  background-color: $optional-color-aqua;
+  box-shadow: 0 0 5px $optional-color-green;
+}
+
+.middle-line.menu-active {
+  width: 30px;
+}

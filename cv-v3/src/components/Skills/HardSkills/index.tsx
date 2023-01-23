@@ -4,7 +4,7 @@ import './index.scss';
 
 const HardSkills = () => {
   return (
-    <section className="hard-skills">
+    <section className="hard-skills" id="hard-skills">
       <h3 className="section-title hard-skills-title">Hard Skills</h3>
       <ul className="skills-section stack">
         <h4 className="stack-title">Current Stack</h4>

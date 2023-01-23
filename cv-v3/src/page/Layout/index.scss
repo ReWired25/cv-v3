@@ -1,5 +1,8 @@
+@use 'styles/common.scss' as *;
+
 .container {
   margin: 20px auto;
   max-width: 1300px;
+  background-color: $section-background;
   box-shadow: 0 0 50px;
 }

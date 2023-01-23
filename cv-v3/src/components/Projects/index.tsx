@@ -6,7 +6,7 @@ import './index.scss';
 
 const Projects = () => {
   return (
-    <section className="projects-section">
+    <section className="projects-section" id="projects">
       <h3 className="section-title projects-section-title">Projects</h3>
       <div className="projects-container">
         {PROJECTS_INFO.map(({ name, description, stack, features, img, repo, deploy }) => (

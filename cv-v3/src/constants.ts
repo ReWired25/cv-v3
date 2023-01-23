@@ -1,3 +1,26 @@
+export const NAV_LINKS = [
+  {
+    link: '#education',
+    name: 'Education',
+  },
+  {
+    link: '#hard-skills',
+    name: 'Hard Skills',
+  },
+  {
+    link: '#soft-skills',
+    name: 'Soft Skills',
+  },
+  {
+    link: '#about',
+    name: 'About',
+  },
+  {
+    link: '#projects',
+    name: 'Projects',
+  },
+];
+
 export const CONTACTS = [
   {
     type: 'mobile',

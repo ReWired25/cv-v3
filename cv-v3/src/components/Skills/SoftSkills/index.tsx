@@ -4,7 +4,7 @@ import './index.scss';
 
 const SoftSkills = () => {
   return (
-    <section className="soft-skills">
+    <section className="soft-skills" id="soft-skills">
       <h3 className="section-title soft-skills-title">Soft Skills</h3>
       <ul className="soft-skills-list">
         {SOFT_SKILLS.map(({ characteristic, description }) => (

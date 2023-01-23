@@ -1,35 +1,34 @@
+import Link from 'components/Link';
+import BurgerIcon from 'components/BurgerIcon';
+
+import { NAV_LINKS } from '../../constants';
+
+import { NavigationProps } from './types';
+
 import './index.scss';
 
-const navLinks = [
-  {
-    link: '#',
-    name: 'Education',
-  },
-  {
-    link: '#',
-    name: 'Projects',
-  },
-  {
-    link: '#',
-    name: 'About',
-  },
-  {
-    link: '#',
-    name: 'Contacts',
-  },
-];
+const Navigation = ({ toggleMenu, setToggleMenu }: NavigationProps) => {
+  const navigationMenuClass = toggleMenu ? 'navigation-menu menu-active' : 'navigation-menu';
+  const navigationListClass = toggleMenu ? 'navigation-list menu-active' : 'navigation-list';
+  const overlayClass = toggleMenu ? 'overlay menu-active' : 'overlay';
 
-const Navigation = () => {
   return (
-    <nav className="navigation">
-      {navLinks.map(({ link, name }) => (
-        <li className="nav-item" key={name}>
-          <a className="nav-link" href={link}>
-            {name}
-          </a>
-        </li>
-      ))}
-    </nav>
+    <section className="navigation">
+      <div
+        className={overlayClass}
+        onClick={() => setToggleMenu((state) => (state ? !state : state))}
+      ></div>
+      <nav className={navigationMenuClass}>
+        <ul className={navigationListClass}>
+          {NAV_LINKS.map(({ link, name }) => (
+            <li className="nav-item" key={name}>
+              <Link className={'nav-link'} link={link} name={name} />
+            </li>
+          ))}
+        </ul>
+      </nav>
+      <BurgerIcon toggleMenu={toggleMenu} setToggleMenu={setToggleMenu} />
+    </section>
   );
 };
 

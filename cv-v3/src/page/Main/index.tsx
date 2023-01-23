@@ -1,3 +1,4 @@
+import Hero from 'components/Hero';
 import Contacts from 'components/Contacts';
 import HardSkills from 'components/Skills/HardSkills';
 import Education from 'components/Education';
@@ -11,6 +12,7 @@ import './index.scss';
 const Main = () => {
   return (
     <main>
+      <Hero />
       <Contacts />
       <StyleLine />
       <section className="hard-skills-education-container">

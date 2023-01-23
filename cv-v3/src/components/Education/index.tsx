@@ -6,7 +6,7 @@ import './index.scss';
 
 const Education = () => {
   return (
-    <section className="education">
+    <section className="education" id="education">
       <h3 className="section-title education-title">Education</h3>
       <div className="education-sources-container">
         <ul className="education-source education-rss">

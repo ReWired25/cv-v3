@@ -1,79 +1,19 @@
 @use 'styles/common.scss' as *;
 
 .header {
-  padding: 35px 0 15px 0;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  gap: 35px;
-  background-color: $section-background;
+  position: sticky;
+  top: 0;
+  z-index: 25;
+  padding: 35px 0;
+  background-color: rgba($section-background, 0.8);
   color: $optional-color-green;
-  @include mobile {
-    flex-direction: column;
-    gap: 20px;
-  }
-}
-
-.title-name {
-  font-size: 50px;
-  font-weight: 500;
-  background: linear-gradient(219deg, $optional-color-aqua 19%, transparent 19%,transparent 20%, $optional-color-green 20%, $optional-color-green 39%, transparent 39%,transparent 40%, $optional-color-violet 40%, $optional-color-violet 59% , transparent 59%,transparent 60%, $optional-color-green 60%, $optional-color-green 79%, transparent 79%, transparent 80%, $optional-color-aqua 80%);
-  color: transparent;
-  background-clip: text;
-  -webkit-background-clip: text;
-  text-shadow: 0px 0px 50px rgb(76 252 76 / 35%);
+  transition: 0.5s;
   @include media-small-tablet {
-    font-size: 35px;
-  }
-  @include mobile {
-    font-size: 30px;
+    padding: 10px 0;
   }
 }
 
-.title-frontend {
-  font-size: 25px;
-  font-weight: 400;
-  text-align: center;
-  @include mobile {
-    font-size: 20px;
-  }
-}
-
-.avatar-photo {
-  z-index: 5;
-  height: 170px;
-  @include media-small-tablet {
-    height: 135px;
-  }
-}
-
-.avatar-container {
-  position: relative;
-  display: flex;
-}
-
-.avatar-container::before,
-.avatar-container::after {
-  content: '';
-  position: absolute;
-}
-
-.avatar-container::before {
-  transform: translate(-5px, -5px);
-  z-index: 3;
-  background: $optional-color-green;
-  width: 80px;
-  height: 90px;
-  box-shadow: 0 0 5px $optional-color-green;
-}
-
-.avatar-container::after {
-  transform: translate(55px, 85px);
-  background: $optional-color-aqua;
-  width: 80px;
-  height: 90px;
-  box-shadow: 0 0 5px $optional-color-aqua;
-  @include media-small-tablet {
-    transform: translate(30px, 50px);
-  }
+.header.menu-active {
+  top: 20px;
+  background-color: transparent;
 }

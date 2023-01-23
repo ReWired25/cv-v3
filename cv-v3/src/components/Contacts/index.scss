@@ -5,7 +5,6 @@
   justify-content: center;
   display: flex;
   gap: 70px;
-  background-color: $section-background;
   transition: 0.5s;
   @include media-tablet {
     flex-wrap: wrap;

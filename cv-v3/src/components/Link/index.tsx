@@ -5,7 +5,7 @@ import './index.scss';
 const Link = ({ className, link, name }: LinkProps) => {
   return (
     <a
-      target="_blank"
+      target={className === 'nav-link' ? '_self' : '_blank'}
       className={className ? `link ${className}` : 'link'}
       href={link}
       rel="noreferrer"

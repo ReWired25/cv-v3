@@ -1,0 +1,67 @@
+@use 'styles/common.scss' as *;
+
+.navigation {
+  color: $optional-color-green;
+}
+
+.overlay {
+  display: none;
+  position: fixed;
+  opacity: 0;
+  left: 0;
+  top: 0;
+  height: 100vh;
+  width: 100vw;
+  background: rgba($section-background, 0.5);
+  transition: 1s;
+  @include media-small-tablet {
+    display: block;
+  }
+}
+
+.overlay.menu-active {
+  opacity: 1;
+  z-index: 5;
+  cursor: pointer;
+}
+
+.navigation-menu {
+  @include media-small-tablet {
+    position: fixed;
+    z-index: 10;
+    background: #10141f;
+    padding: 130px 50px 50px 50px;
+    width: 80%;
+    right: -580px;
+    top: 0;
+    transition: 0.5s;
+  }
+}
+
+.navigation-menu.menu-active {
+  @include media-small-tablet {
+    right: 0;
+  }
+}
+
+.navigation-list {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 18px;
+  gap: 120px;
+  transition: 0.5s;
+  @include media-tablet {
+    gap: 55px;
+  }
+  @include media-small-tablet {
+    position: relative;
+    flex-direction: column;
+  }
+}
+
+.navigation-list.menu-active {
+  @include media-small-tablet {
+    left: 0;
+  }
+}

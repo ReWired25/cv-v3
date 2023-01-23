@@ -2,7 +2,6 @@
 
 .hard-skills-education-container,
 .soft-skills-about-container {
-  background-color: $section-background;
   display: flex;
   justify-content: space-around;
   @include media-tablet {
