@@ -12,6 +12,10 @@ const Navigation = ({ toggleMenu, setToggleMenu }: NavigationProps) => {
   const navigationListClass = toggleMenu ? 'navigation-list menu-active' : 'navigation-list';
   const overlayClass = toggleMenu ? 'overlay menu-active' : 'overlay';
 
+  const handleMenuOnLink = () => {
+    if (toggleMenu) setToggleMenu((state) => !state);
+  };
+
   return (
     <section className="navigation">
       <div
@@ -22,7 +26,12 @@ const Navigation = ({ toggleMenu, setToggleMenu }: NavigationProps) => {
         <ul className={navigationListClass}>
           {NAV_LINKS.map(({ link, name }) => (
             <li className="nav-item" key={name}>
-              <Link className={'nav-link'} link={link} name={name} />
+              <Link
+                className={'nav-link'}
+                link={link}
+                name={name}
+                handleMenuOnLink={handleMenuOnLink}
+              />
             </li>
           ))}
         </ul>
