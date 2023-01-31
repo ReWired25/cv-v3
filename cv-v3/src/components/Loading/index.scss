@@ -1,0 +1,18 @@
+@use 'styles/common.scss' as *;
+
+.loading-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  opacity: 0;
+  z-index: 0;
+  background-color: $section-background;
+  transition: 0.3s;
+}
+
+.loading-overlay.active {
+  z-index: 30;
+  opacity: 1;
+}
