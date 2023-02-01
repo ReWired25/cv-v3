@@ -78,48 +78,36 @@ export const SIDE_EDUCATION = [
 export const STACK_BAGES = [
   {
     type: 'langs',
-    badges: [
-      'https://img.shields.io/badge/JavaScript-black?logo=javascript&style=for-the-badge',
-      'https://img.shields.io/badge/TypeScript-blue?logo=TypeScript&logoColor=white&style=for-the-badge',
-    ],
+    badges: ['./assets/badjes/JavaScript-black.svg', './assets/badjes/TypeScript-blue.svg'],
   },
   {
     type: 'frameworks',
-    badges: [
-      'https://img.shields.io/badge/React-282c34?logo=react&style=for-the-badge',
-      'https://img.shields.io/badge/Redux-764abc?logo=redux&style=for-the-badge',
-    ],
+    badges: ['./assets/badjes/React-282c34.svg', './assets/badjes/Redux-764abc.svg'],
   },
   {
     type: 'layout',
     badges: [
-      'https://img.shields.io/badge/HTML5-e54c21?logo=html5&logoColor=white&style=for-the-badge',
-      'https://img.shields.io/badge/CSS3-214ce5?logo=css3&logoColor=white&style=for-the-badge',
-      'https://img.shields.io/badge/SASS-cf649a?logo=sass&logoColor=white&style=for-the-badge',
-      'https://img.shields.io/badge/Material%20UI-0071e3?logo=mui&logoColor=white&style=for-the-badge',
+      './assets/badjes/HTML5-e54c21.svg',
+      './assets/badjes/CSS3-214ce5.svg',
+      './assets/badjes/SASS-cf649a.svg',
+      './assets/badjes/Material%20UI-0071e3.svg',
     ],
   },
   {
     type: 'env',
     badges: [
-      'https://img.shields.io/badge/Webpack-2b3a42?logo=webpack&style=for-the-badge',
-      'https://img.shields.io/badge/Eslint-4b32c3?logo=eslint&logoColor=white&style=for-the-badge',
-      'https://img.shields.io/badge/Prettier-1a2b34?logo=prettier&style=for-the-badge',
+      './assets/badjes/Webpack-2b3a42.svg',
+      './assets/badjes/Eslint-4b32c3.svg',
+      './assets/badjes/Prettier-1a2b34.svg',
     ],
   },
   {
     type: 'versionControl',
-    badges: [
-      'https://img.shields.io/badge/Git-f0f0e8?logo=git&style=for-the-badge',
-      'https://img.shields.io/badge/Github-24292f?logo=github&style=for-the-badge',
-    ],
+    badges: ['./assets/badjes/Git-f0f0e8.svg', './assets/badjes/Github-24292f.svg'],
   },
   {
     type: 'node',
-    badges: [
-      'https://img.shields.io/badge/Node.js-5dae47?logo=node.js&logoColor=white&style=for-the-badge',
-      'https://img.shields.io/badge/NPM-c53231?logo=npm&logoColor=white&style=for-the-badge',
-    ],
+    badges: ['./assets/badjes/Node.svg', './assets/badjes/NPM-c53231.svg'],
   },
 ];
 
